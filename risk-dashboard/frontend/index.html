@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Risk Dashboard</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <!-- Filters sidebar -->
+                <div class="card">
+                    <div class="card-header">Filters</div>
+                    <div class="card-body">
+                        <div class="filter-group">
+                            <label class="filter-label" for="end-year-filter">End Year</label>
+                            <input class="filter-input" type="number" id="end-year-filter" min="2010" max="2030" value="2022">
+                        </div>
+                        <div class="filter-group">
+                            <label class="filter-label" for="topic-filter">Topics</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="topic-filter-1" value="Cybersecurity">
+                                <label class="form-check-label" for="topic-filter-1">Cybersecurity</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="topic-filter-2" value="Climate Change">
+                                <label class="form-check-label" for="topic-filter-2">Climate Change</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="topic-filter-3" value="Artificial Intelligence">
+                                <label class="form-check-label" for="topic-filter-3">Artificial Intelligence</label>
+                            </div>
+                            <!-- Add more checkboxes for other topics -->
+                        </div>
+                        <!-- Add more filter groups for other filters -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <!-- Visualizations -->
+                <div id="visualizations"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

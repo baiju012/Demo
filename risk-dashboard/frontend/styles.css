@@ -1,0 +1,25 @@
+body {
+ font-family: Arial, sans-serif;
+}
+
+.sidebar {
+ margin-right: 20px;
+}
+
+.filter-group {
+ margin-bottom: 20px;
+}
+
+.filter-label {
+ font-weight: bold;
+ margin-bottom: 5px;
+ display: block;
+}
+
+.filter-input {
+ width: 100%;
+}
+
+.visualization {
+ margin-bottom: 20px;
+}
